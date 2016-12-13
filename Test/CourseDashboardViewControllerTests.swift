@@ -57,7 +57,9 @@ class CourseDashboardViewControllerTests: SnapshotTestCase {
             environment.logInTestUser()
             let controller = CourseDashboardViewController(environment: environment,
                                                            courseID: course.course_id!)
-            
+            inScreenNavigationContext(controller, action: { () -> () in
+                assertSnapshotValidWithContent(controller.navigationController!)
+            })
             inScreenDisplayContext(controller) {
                 waitForStream(controller.t_loaded)
                 
@@ -65,6 +67,7 @@ class CourseDashboardViewControllerTests: SnapshotTestCase {
                 
                 let expected = hasHandoutsUrl
                 XCTAssertEqual(enabled, expected, "Expected handouts visiblity \(expected) when course_handouts_empty: \(hasHandoutsUrl)")
+
             }
         }
     }
