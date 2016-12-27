@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,14 +23,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prometheus_text" translatesAutoresizingMaskIntoConstraints="NO" id="Btz-9i-Wpp">
-                                <rect key="frame" x="20" y="227.5" width="335" height="212"/>
+                                <rect key="frame" x="20" y="94" width="335" height="212"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.098039215686274508" green="0.13333333333333333" blue="0.1764705882352941" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Btz-9i-Wpp" secondAttribute="trailing" constant="20" id="DVe-wk-tPc"/>
                             <constraint firstItem="Btz-9i-Wpp" firstAttribute="centerX" secondItem="IdX-r0-mwJ" secondAttribute="centerX" id="ICz-Lv-9U3"/>
-                            <constraint firstItem="Btz-9i-Wpp" firstAttribute="centerY" secondItem="IdX-r0-mwJ" secondAttribute="centerY" id="Noc-R9-ZRU"/>
+                            <constraint firstItem="Btz-9i-Wpp" firstAttribute="centerY" secondItem="IdX-r0-mwJ" secondAttribute="centerY" multiplier="0.6" id="Noc-R9-ZRU"/>
                             <constraint firstItem="Btz-9i-Wpp" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IdX-r0-mwJ" secondAttribute="leading" constant="20" id="T5g-8e-zp7"/>
                         </constraints>
                     </view>

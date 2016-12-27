@@ -51,18 +51,17 @@ class StartupViewController: UIViewController, InterfaceOrientationOverriding {
     // MARK: - View Setup
 
     private func setupBackground() {
-        let backgroundImage = UIImage(named: "launchBackground")
-        let backgroundImageView = UIImageView(image: backgroundImage)
-        backgroundImageView.contentMode = .ScaleAspectFill
-        view.addSubview(backgroundImageView)
+        let backgroundView = UIView()
+        backgroundView.backgroundColor = UIColor(hexString: "19222D", alpha: 1)
+        view.addSubview(backgroundView)
 
-        backgroundImageView.snp_makeConstraints { (make) in
+        backgroundView.snp_makeConstraints { (make) in
             make.edges.equalTo(view)
         }
     }
 
     private func setupLogo() {
-        let logo = UIImage(named: "logo")
+        let logo = UIImage(named: "prometheus_text")
         logoImageView.image = logo
         logoImageView.contentMode = .ScaleAspectFit
         logoImageView.accessibilityLabel = environment.config.platformName()
@@ -71,8 +70,10 @@ class StartupViewController: UIViewController, InterfaceOrientationOverriding {
         view.addSubview(logoImageView)
 
         logoImageView.snp_makeConstraints { (make) in
-            make.centerY.equalTo(view.snp_bottom).dividedBy(5.0)
-            make.centerX.equalTo(view.snp_centerX)
+            make.centerY.equalTo(view).multipliedBy(0.6)
+            make.right.equalTo(view).inset(20)
+            make.left.equalTo(view).inset(20)
+            make.height.equalTo(80)
         }
     }
 
