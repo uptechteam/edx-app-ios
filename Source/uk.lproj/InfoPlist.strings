@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  edX
+
+  Created by Anna on 28.12.16.
+  Copyright © 2016 edX. All rights reserved.
+*/
+
+NSPhotoLibraryUsageDescription = "щоб Ви могли обрати фото для профілю";
+NSCameraUsageDescription = "щоб Ви могли зробити фото для профілю";

@@ -539,6 +539,7 @@
 		8FE04B4D1A1E2637007F88B8 /* OEXFBSocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE04B4C1A1E2637007F88B8 /* OEXFBSocial.m */; };
 		95D5693C1E114407008A7363 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D5693B1E114407008A7363 /* Images.xcassets */; };
 		95D5693E1E114B99008A7363 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 95D5693D1E114B99008A7363 /* Launch.storyboard */; };
+		95D5698A1E13EC02008A7363 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 95D5698C1E13EC02008A7363 /* InfoPlist.strings */; };
 		9C9B7F6C1A8CC68400A857B2 /* OEXFindCoursesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B7F641A8CC68400A857B2 /* OEXFindCoursesViewController.m */; };
 		9C9B7F6D1A8CC68400A857B2 /* OEXCourseInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B7F661A8CC68400A857B2 /* OEXCourseInfoViewController.m */; };
 		9C9B7F731A8CC80E00A857B2 /* OEXURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C9B7F721A8CC80E00A857B2 /* OEXURLSessionManager.m */; };
@@ -1370,6 +1371,12 @@
 		8FE04B4C1A1E2637007F88B8 /* OEXFBSocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEXFBSocial.m; sourceTree = "<group>"; };
 		95D5693B1E114407008A7363 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = edX/Images.xcassets; sourceTree = "<group>"; };
 		95D5693D1E114B99008A7363 /* Launch.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Launch.storyboard; path = ../Launch.storyboard; sourceTree = "<group>"; };
+		95D569861E13EBBE008A7363 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		95D569871E13EBBF008A7363 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = uk; path = uk.lproj/profiles.json; sourceTree = "<group>"; };
+		95D569881E13EBBF008A7363 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = uk; path = uk.lproj/countries.json; sourceTree = "<group>"; };
+		95D569891E13EBBF008A7363 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = uk; path = uk.lproj/languages.json; sourceTree = "<group>"; };
+		95D5698B1E13EC02008A7363 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		95D5698D1E13EC07008A7363 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C9B7F631A8CC68400A857B2 /* OEXFindCoursesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEXFindCoursesViewController.h; sourceTree = "<group>"; };
 		9C9B7F641A8CC68400A857B2 /* OEXFindCoursesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEXFindCoursesViewController.m; sourceTree = "<group>"; };
 		9C9B7F651A8CC68400A857B2 /* OEXCourseInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEXCourseInfoViewController.h; sourceTree = "<group>"; };
@@ -3113,6 +3120,7 @@
 				BECB7B161924C0C3009C77F1 /* edX-Info.plist */,
 				BECB7B1A1924C0C3009C77F1 /* main.m */,
 				BECB7B1C1924C0C3009C77F1 /* edX-Prefix.pch */,
+				95D5698C1E13EC02008A7363 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -3528,6 +3536,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				uk,
 			);
 			mainGroup = BECB7B021924C0C3009C77F1;
 			productRefGroup = BECB7B0C1924C0C3009C77F1 /* Products */;
@@ -3639,6 +3648,7 @@
 				95D5693C1E114407008A7363 /* Images.xcassets in Resources */,
 				BD7C6C401DCA329A0004D135 /* fonts.json in Resources */,
 				69ECC6021D50D1170030CF87 /* OpenSans-Italic.ttf in Resources */,
+				95D5698A1E13EC02008A7363 /* InfoPlist.strings in Resources */,
 				69ECC6481D50D1170030CF87 /* separator5.png in Resources */,
 				69ECC6141D50D1170030CF87 /* bt_blue2.png in Resources */,
 				69ECC6321D50D1170030CF87 /* ic_download_arrow.png in Resources */,
@@ -4457,6 +4467,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1A03DEA41BBC72BA006783FB /* en */,
+				95D569881E13EBBF008A7363 /* uk */,
 			);
 			name = countries.json;
 			sourceTree = "<group>";
@@ -4465,6 +4476,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				1A55019D1BBA30C900D5F9DD /* en */,
+				95D569871E13EBBF008A7363 /* uk */,
 			);
 			name = profiles.json;
 			sourceTree = "<group>";
@@ -4473,14 +4485,25 @@
 			isa = PBXVariantGroup;
 			children = (
 				1AFEB1BA1BBD88F3004C471D /* en */,
+				95D569891E13EBBF008A7363 /* uk */,
 			);
 			name = languages.json;
+			sourceTree = "<group>";
+		};
+		95D5698C1E13EC02008A7363 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				95D5698B1E13EC02008A7363 /* en */,
+				95D5698D1E13EC07008A7363 /* uk */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		BEEEBF82196AAACF00EF2C35 /* Localizable.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				773BE0001AAA07DD0074C3CA /* en */,
+				95D569861E13EBBE008A7363 /* uk */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -4492,6 +4515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -4851,6 +4875,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -4900,6 +4925,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;

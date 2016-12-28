@@ -1,0 +1,695 @@
+/*
+ Localizable.strings
+ edXVideoLocker
+ 
+ Created by Nirbhay Agarwal on 07/07/14.
+ Copyright (c) 2014-2015 edX. All rights reserved.
+ */
+
+// Please keep in alphabetical order
+
+/* Alert dialog confirmation button when user chooses to download a large video */
+"ACCEPT_LARGE_VIDEO_DOWNLOAD"="Завантажити";
+/* Label for check box when it's checked. */
+"ACCESSIBILITY_CHECKBOX_CHECKED" = "Обрано";
+/* Label for check box when it's checked. */
+"ACCESSIBILITY_CHECKBOX_UNCHECKED" = "Зняти виділення";
+/* Label for action hint on check box when it's checked. */
+"ACCESSIBILITY_CHECKBOX_HINT_CHECKED" = "Зняти мітку";
+/* Label for action hint on check box when it's checked. */
+"ACCESSIBILITY_CHECKBOX_HINT_UNCHECKED" = "Натисніть, щоб обрати";
+/* Appending By before course organization and number on My Find Courses*/
+"ACCESSIBILITY_BY" = "від";
+/* Accessibility label for posted data of discussion responses*/
+"ACCESSIBILITY.DISCUSSION_POSTED_ON" = "Опубліковано {date}";
+/* Accessibility hint for Vote button for discussion responses*/
+"ACCESSIBILITY.DISCUSSION_VOTE_HINT" = "Натисніть двічі для того, щоб віддати голос";
+/* Accessibility hint for Unvote button for discussion responses*/
+"ACCESSIBILITY.DISCUSSION_UNVOTE_HINT" = "Натисніть двічі, щоб повернути голос";
+/* Accessibility hint for Report button for discussion responses*/
+"ACCESSIBILITY.DISCUSSION_REPORT_HINT" = "Натисніть двічі, щоб повідомити.";
+/* Accessibility hint for Unreport button for discussion responses*/
+"ACCESSIBILITY.DISCUSSION_UNREPORT_HINT" = "Натисніть двічі, щоб відмінити повідомлення.";
+/* Accessibility hint for Follow button for discussion responses*/
+"ACCESSIBILITY.DISCUSSION_FOLLOW_HINT" = "Натисніть двічі, щоб слідкувати.";
+/* Accessibility hint for Unfollow button for discussion responses*/
+"ACCESSIBILITY.DISCUSSION_UNFOLLOW_HINT" = "Натисніть двічі, щоб не слідкувати.";
+/* Acessibility label for the download progress button. {percent_complete} is an already localized numeric percentage like "44%" */
+/* Acessibility label for the download progress button. {percent_complete} is an already localized numeric percentage like "44%" */
+"ACCESSIBILITY_DOWNLOAD_PROGRESS_BUTTON##{one}" = "Триває завантаження: {percent_complete}";
+"ACCESSIBILITY_DOWNLOAD_PROGRESS_BUTTON##{few}" = "Тривають завантаження: {percent_complete}";
+"ACCESSIBILITY_DOWNLOAD_PROGRESS_BUTTON##{other}" = "Тривають завантаження: {percent_complete}";
+/* Acessibility hint for the download progress button. */
+"ACCESSIBILITY_DOWNLOAD_PROGRESS_BUTTON_HINT" = "Натисніть двічі, щоб побачити завантаження, що тривають";
+/* Accessibility hint for video download list row cells. {video_name} is the name of video being downloaded. {percent_complete} is an already localized numeric percentage like "44%". */
+/* Accessibility hint for video download list row cells. {video_name} is the name of video being downloaded. {percent_complete} is an already localized numeric percentage like "44%". */
+"ACCESSIBILITY_DOWNLOAD_VIEW_CELL##{one}" = "Завантаження {video_name}. {percent_complete} процент збережено.";
+"ACCESSIBILITY_DOWNLOAD_VIEW_CELL##{few}" = "Завантаження {video_name}. {percent_complete} процентів збережено.";
+"ACCESSIBILITY_DOWNLOAD_VIEW_CELL##{other}" = "Завантаження {video_name}. {percent_complete} процентів збережено.";
+/* Accessibility hint for number of downloadable videos */
+/* Accessibility hint for number of downloadable videos */
+"ACCESSIBILITY_DOWNLOADABLE_VIDEOS##{one}" = "Завантажується {video_count} відео.";
+"ACCESSIBILITY_DOWNLOADABLE_VIDEOS##{few}" = "Завантажуються {video_count} відео.";
+"ACCESSIBILITY_DOWNLOADABLE_VIDEOS##{other}" = "Завантажуються {video_count} відео.";
+/* Accessibility label for fullscreen button on video player */
+"ACCESSIBILITY_FULLSCREEN" = "На весь екран";
+/* Accessibility label for fullscreen button on video player when player is in fullscreen mode*/
+"ACCESSIBILITY_EXIT_FULLSCREEN" = "Вийти з повноекранного режиму";
+/* Accessibility label for HTML Icon in the Courseware screens */
+"ACCESSIBILITY_HTML" = "HTML";
+/* Accessibility label for Pause Button in the Video Player */
+"ACCESSIBILITY_PAUSE" = "Пауза";
+/* Accessibility label for Play Button in the Video Player */
+"ACCESSIBILITY_PLAY" = "Грати";
+/* Accessibility lable for the avatar image */
+"ACCESSIBILITY_USER_AVATAR" = "Ваш аватар";
+/* Accessibility label for Problem Icon in the Courseware screens */
+"ACCESSIBILITY_PROBLEM" = "Проблема";
+/* Accessibility label for Rewind Button in the Video Player */
+"ACCESSIBILITY_REWIND" = "Оновити";
+/* Call to action for Rewind Button in the Video Player */
+"ACCESSIBILITY_REWIND_HINT" = "Оновлюється кожні 30 секунд.";
+/* Accessibility label for Seek bar in the Video Player */
+"ACCESSIBILITY_SEEK_BAR" = "Панель пошуку";
+/* Accessibility label for Select Button on My Videos List Screen */
+"ACCESSIBILITY_SELECT" = "Обрати";
+/* Accessibility label for Select All Button on My Videos List Screen */
+"ACCESSIBILITY_SELECT_ALL" = "Обрати все";
+/* Accessibility label for Settings Button in the Video Player */
+"ACCESSIBILITY_SETTINGS" = "Налаштування";
+/* Call to action for Course content on Home Screen */
+"ACCESSIBILITY_SHOWS_COURSE_CONTENT" = "Натисніть двічі, щоб побачити контент курсу";
+/* Call to action for Opening Dropdown */
+"ACCESSIBILITY_SHOWS_DROPDOWN_HINT" = "Натисніть двічі, щоб відкрити меню";
+/* Call to action for Selecting Option */
+"ACCESSIBILITY_SELECT_VALUE_HINT" = "Натисніть двічі, щоб обрати";
+/* Accessibility label for Unknown Icon in the Courseware screens */
+"ACCESSIBILITY_UNKNOWN" = "Невідомо";
+/* Accessibility label for Video Icon in the Courseware screens */
+"ACCESSIBILITY_VIDEO" = "Відео";
+/* Text spoken for Navigation Button on Course List Screen */
+"ACCESSIBILITY_MENU" = "Меню Навігації";
+/* Accessibility label for close button when left drawer is open*/
+"ACCESSIBILITY_CLOSE_MENU" = "Закрити Меню Навігації";
+/* Accessibility label for hiding keyboard*/
+"ACCESSIBILITY_HIDE_KEYBOARD" = "Сховати клавіатуру";
+/* Accessibility Hint to view user profile*/
+"ACCESSIBILITY_SHOW_USER_PROFILE_HINT" = "Натисніть двічі, щоб побачити профіль користувача";
+/*Accessibility text for pinned discussion thread(Posts screen)*/
+"ACCESSIBILITY.DISCUSSION_PINNED" = "Закріплено";
+/*Accessibility text for closed discussion thread(Posts screen)*/
+"ACCESSIBILITY.DISCUSSION_CLOSED" = "Закрито";
+/*Accessibility text for followed discussion thread(Posts screen)*/
+"ACCESSIBILITY.DISCUSSION_FOLLOWED" = "Відслідковується";
+/* Accessibility text for unread discussion comments count (Posts screen) - {count} is a number of unread comments */
+"ACCESSIBILITY.DISCUSSION_UNREAD_REPLIES"="{count} непрочитаних відповідей";
+/*Accessibility text for unread discussion thread (Posts screen)*/
+"ACCESSIBILITY.DISCUSSION_UNREAD_THREAD" = "Непрочитана нитка обговорень";
+/*Accessibility text for read discussion thread (Posts screen)*/
+"ACCESSIBILITY.DISCUSSION_READ_THREAD" = "Читати нитку обговорень";
+/*Accessibility text for discussion thread last seen date(Posts screen) - {date} last updated thread date*/
+"ACCESSIBILITY.DISCUSSION_LAST_POST_ON" = "Остання публікація {date}";
+/*Accessibility hint for discussion thread(Posts screen)*/
+"ACCESSIBILITY.DISCUSSION_THREAD_HINT" = "Натисніть двічі для того, щоб побачити нитку";
+/*Accessibility hint for sort button(Posts Screen)*/
+"ACCESSIBILITY.DISCUSSION_SORT_BY" = "Сортувати по {sort_by}";
+/*Accessibility hint for filter button(Posts Screen)*/
+"ACCESSIBILITY.DISCUSSION_FILTER_BY" = "Фільтрувати за {filter_by}";
+/* Title of user profile section for user accomplishments (like badges) */
+"ACCOMPLISHMENTS.TITLE" = "Досягнення";
+/* Default text template when user shares an accomplishment */
+"ACCOMPLISHMENTS.SHARE_TEXT" = "Я отримав відзнаку на {platform_name}! Перевірте";
+/* Add a comment button title and place holder used in discussion comment text view */
+"ADD_A_COMMENT"="Додати коментар";
+/* Add a response button title used in discussion's responses screen */
+"ADD_A_RESPONSE"="Додати відгук";
+/* Add comment button title used in discussion's Add a comment */
+"ADD_COMMENT"="Додати коментар";
+/* Add post button title used in discussion's Create a new post */
+"ADD_POST"="Додати повідомлення";
+/* Add response button title used in discussion's Add a response */
+"ADD_RESPONSE"="Додати відгук";
+/* Add your post button title used in discussion's add a post textview */
+"ADD_YOUR_POST"="Додати Ваше повідомлення";
+/* Alert dialog button allowing user to chosing to allow downloads on cellular */
+"ALLOW"="Дозволити";
+/* Filtering option to show all discussion posts */
+"ALL_POSTS"="Усі повідомлення";
+/* Tab allowing the user to see all videos */
+"ALL_VIDEOS"="Усі відео";
+/* Message shown when there are no announcements for a course */
+"ANNOUNCEMENT_UNAVAILABLE"="Наразі немає жодних оголошень до курсу";
+/* Label indicating the response answer in Discussion Add comment screen */
+"ANSWER"="Відповідь";
+/* Navigation title for a Question Post which has endorsed answers */
+"ANSWERED_QUESTION"="Запитання, на які була дана відповідь";
+/*Asteric for marking fields required*/
+"ASTERIC" = "*";
+/* Prefix used with Staff of Community TA on the posts screen */
+"BY_AUTHOR" = "За {author_name}";
+/* Prefix used with Staff of Community TA on the posts screen */
+"BY_AUTHOR_LOWER_CASE" = "за {author_name}";
+/* Course completion title */
+"CERTIFICATES.COURSE_COMPLETION_TITLE"="Поздоровляємо!";
+/* Course completion subtitle */
+"CERTIFICATES.COURSE_COMPLETION_SUBTITLE"="Ви пройшли курс.";
+/* Get certificate button text. */
+"CERTIFICATES.GET_CERTIFICATE"="Показати сертифікат";
+/* Text to share on FB & Twitter when sharing a course cert */
+"CERTIFICATES.SHARE_TEXT"="Я щойно отримав Сертифікат {platform_name}! Перевірте:";
+/* Title bar when viewing an actual certificate */
+"CERTIFICATES.VIEW_CERT_TITLE"="Сертифікат";
+/* Title of course announcements section */
+"COURSE_ANNOUNCEMENTS"="Оголошення";
+/* Title of course handouts section */
+"COURSE_HANDOUTS"="Матеріал";
+/* Button text for cancelling any action */
+"CANCEL"="Відмінити";
+/* Alert explaining charges will apply since the "Wi-fi only" switch was turned off */
+"CELLULAR_DOWNLOAD_ENABLED_MESSAGE"="Дозволяє Вашому пристрою завантажувати відео за допомогою мережі Вашого оператора, коли Wi-Fi не доступний. Можуть бути стягнуті додаткові кошти за передачу даних.";
+/* Title of alert explaining charges will apply since the "Wi-fi only" switch was turned off */
+"CELLULAR_DOWNLOAD_ENABLED_TITLE"="Дозволити завантаження, використовуючи мобільні мережі";
+/* Error message shown when there is a problem loading a video */
+"CHECK_CONNECTION"="Неможливо завантажити відео.\nПеревірте Інтернет-з'єднання.";
+/* Generic action button label when the user chooses a thing */
+"CHOOSE" = "Обрати";
+/* Title of dropdown from which the user can select topics on New Post Screen */
+"CHOOSE_A_TOPIC" = "Оберіть тему...";
+/* Prompt text shown after user chooses to begin registering with an external service like Facebook or Google. {service} will be replaced with a service name like Google or Facebook. */
+"COMPLETE_REGISTRATION_INFO" = "Ви успішно увійшли через {service}. Нам потрібно ще трохи інформації перед тим як ви почнете навчання з {platform_name}.";
+/* Prompt text shown after user chooses to begin registering with an external service like Facebook or Google */
+"COMPLETE_REGISTRATION_PROMPT" = "Завершити реєстрацію";
+/* Title of alert when confirming deletion of a video */
+"CONFIRM_DELETE_TITLE"="Підтвердити видалення";
+/* Text of alert when confirming video deletion */
+/* Text of alert when confirming video deletion */
+"CONFIRM_DELETE_MESSAGE##{one}"="Ви справді хочете видалити це відео?";
+"CONFIRM_DELETE_MESSAGE##{few}"="Ви справді хочете видалити ці відео?";
+"CONFIRM_DELETE_MESSAGE##{other}"="Ви справді хочете видалити ці відео?";
+/* Text of push notification announcing a new course announcement */
+"COURSE_ANNOUNCEMENT_NOTIFICATION_BODY"="Нове оголошення: {course_name}";
+/* Alert dialog button text */
+"CLOSE"="Закрити";
+/* Discussion response comment - {count} is a number of comments */
+/* Discussion response comment - {count} is a number of comments */
+"COMMENT##{one}"="{count} коментар";
+"COMMENT##{few}"="{count} коментарів";
+"COMMENT##{other}"="{count} коментарів";
+/* Discussion comments */
+"COMMENTS"="Коментарі";
+/* Text displayed when comments are disabled for a Response */
+"COMMENTS_CLOSED" = "Коментарі закриті для цього відгуку";
+/* Discussion comment (Posts screen) - {count} is a number of comments */
+/* Discussion comment (Posts screen) - {count} is a number of comments */
+"COMMENTS_TO_RESPONSE##{one}"="{count} Коментар";
+"COMMENTS_TO_RESPONSE##{few}"="{count} Коментарів";
+"COMMENTS_TO_RESPONSE##{other}"="{count} Коментарів";
+/* Label for posts pinned by Community TA(s)" */
+"COMMUNITY_TA"="COMMUNITY TA";
+/* Label indicating the amount of time a course will take */
+"COURSE_DETAIL.EFFORT"="Тривалість:";
+/* Label indicating when a course ends. */
+"COURSE_DETAIL.END_DATE"="Дата завершення:";
+/* Button title allowing user to enroll in a course */
+"COURSE_DETAIL.ENROLL_NOW" = "Записатися зараз";
+/* Button title allowing user to view a course from the course's catalog detail page */
+"COURSE_DETAIL.VIEW_COURSE" = "Дивитися курс";
+/* Back bar button title of course */
+"COURSE"="Курс";
+/* Title of tab showing course content */
+"COURSEWARE_TAB_TITLE"="Програма навчання";
+/* Message shown when there is no course content */
+"COURSEWARE_UNAVAILABLE"="Наразі програма навчання не доступна.";
+/* Message shown when attempting to display content not available on the app */
+"COURSE_CONTENT_UNKNOWN" = "Цей інтерактивний компонент ще не доступний з мобільного.\n\nВідкрийте інші частини цього курсу або переглядайте цю частину на сайті.";
+/* Title text for the Announcements section within the course dashboard */
+"COURSE_DASHBOARD_ANNOUNCEMENTS"="Оголошення";
+/* Text describing the Announcements section within the course dashboard */
+"COURSE_DASHBOARD_ANNOUNCEMENTS_DETAIL"="Дізнатися про останні новини";
+/* Title text for the Courseware section of the course dashboard */
+"COURSE_DASHBOARD_COURSEWARE"="Програма навчання";
+/* Text describing the Courseware section within the course dashboard */
+"COURSE_DASHBOARD_COURSE_DETAIL"="Доступ до відео та завдань";
+/* Title text for the Discussions section of the course dashboard */
+"COURSE_DASHBOARD_DISCUSSION"="Обговорення";
+/* Text describing the Discussions section within the course dashboard */
+"COURSE_DASHBOARD_DISCUSSION_DETAIL"="Приєднатися до обговорення";
+/* Title text for the Handouts section of the course dashboard  */
+"COURSE_DASHBOARD_HANDOUTS"="Матеріал";
+/* Text describing the Handouts section within the course dashboard */
+"COURSE_DASHBOARD_HANDOUTS_DETAIL"="Знайти важливу інформацію по курсу";
+/* Label indicated that a course has ended */
+"COURSE_ENDED"="Завершено - {end_date}";
+/* Label indicating that a course will end */
+"COURSE_ENDING"="Дата завершення - {end_date}";
+/* Option to show all different types of course content. Constrasts with 'Show Videos Only'. */
+"COURSE_MODE_FULL"="Показати повний курс";
+/* Option to show only video course content. Constrasts with 'Show All Course Content'. */
+"COURSE_MODE_VIDEO"="Показати тільки відео";
+/* Label to describe the button that allows choosing between Video only mode and All Course Content mode */
+"COURSE_MODE_PICKER_DESCRIPTION" = "Mode Picker";
+/* Text displayed when Can't find one of your courses is tapped on My Courses screen */
+"COURSE_NOT_LISTED" = "Ми докладаємо всіх зусиль, щоб зробити всі наші курси доступними для мобільних пристроїв. Якщо ви не можете знайти курс, перевірте трохи згодом. Ми докладаємо зусиль щодня!";
+/* Message shown on a course when it hasn't started yet.*/
+"COURSE_NOT_STARTED"="Цей курс ще не розпочався.";
+/* Message shown on a course when it hasn't started yet. {date} will be a localized date string */
+"COURSE_WILL_START_AT"="Цей курс ще не розпочався. Поверніться {date}, щоб переглянути Ваші відео.";
+/* Create a new post button title used in discussions' posts screen */
+"CREATE_A_NEW_POST"="Створити новий допис";
+/* Button text to initiate or confirm deletion */
+"DELETE"="Видалити";
+/* Discussion used in the segmented control Creating a new post */
+"DISCUSSION"="Обговорення";
+/* Discussion comment overlay message when new comment added */
+"DISCUSSION_COMMENT_POSTED" = "Ваш коментар додано";
+/* Title of button to allow user to follow a discussion post */
+"DISCUSSION_FOLLOW"="Слідкувати";
+/* Title of action to report a discussion post/response/comment to the course staff */
+"DISCUSSION_REPORT"="Поскаржитися";
+/* Discussion response overlay message when new response added */
+"DISCUSSION_THREAD_POSTED" = "Вашу відповідь додано";
+/* Title of the navigation bar when entering the course discussion */
+"DISCUSSION_TOPICS"="Теми обговорень";
+/* Title of button to allow user to unfollow a discussion post */
+"DISCUSSION_UNFOLLOW"="Не слідкувати";
+/* Title of action to unreport a discussion post/response/comment to the course staff */
+"DISCUSSION_UNREPORT"="Відмінити скаргу";
+/* Discussion comments count (Posts screen) - {count} is a number of comments */
+"DISCUSSIONS.REPLIES_COUNT"="{count} Відповідей";
+/*Discussion posts screen last post date - {date} last updated thread date*/
+"DISCUSSIONS.LAST_POST" = "Останній пост: {date}";
+/* Alert dialog button for allowing/disallowing downloads on cellular data */
+"DO_NOT_ALLOW"="Заборонити";
+/* Description about for button to download videos. For example, "Download 1 video" */
+/* Description about for button to download videos. For example, "Download 3 videos" */
+"DOWNLOAD_MANY_VIDEOS##{one}" = "Завантажити  {video_count} відео";
+"DOWNLOAD_MANY_VIDEOS##{few}" = "Завантажити  {video_count} відео";
+"DOWNLOAD_MANY_VIDEOS##{other}" = "Завантажити  {video_count} відео";
+/* Button text for confirming download */
+"DOWNLOAD" = "Завантажити";
+/* Label indicating that a video or videos have been downloaded */
+"DOWNLOADED" = "Завантажено";
+/* Description about downloaded videos. For example, "Downloaded 1 video" */
+/* Description about downloaded videos. For example, "Downloaded 3 videos" */
+"DOWNLOADED_MANY_VIDEOS##{one}" = "Завантажити  {video_count} відео";
+"DOWNLOADED_MANY_VIDEOS##{few}" = "Завантажити  {video_count} відео";
+"DOWNLOADED_MANY_VIDEOS##{other}" = "Завантажити  {video_count} відео";
+/* Label indicating that a video or videos are downloading */
+"DOWNLOADING" = "Завантаження";
+/* Title of video downloads screen */
+"DOWNLOADS"="Завантаження";
+/* Overlay message after user chooses to download a video */
+"DOWNLOADING_1_VIDEO"="Завантаження 1 відео";
+/* Title for Edit button on My Videos Screen */
+"EDIT" = "Редагувати";
+/* Alert message shown when user tries to send an email, but email isn't setup */
+"EMAIL_ACCOUNT_NOT_SET_UP_MESSAGE"="Схоже, Ви не встановили email-клієнт.";
+/* Alert dialog title shown when user tries to send an email, but email isn't setup */
+"EMAIL_ACCOUNT_NOT_SET_UP_TITLE"="Неможливо відправити email";
+/* Placeholder text for email address entry field */
+"EMAIL_ADDRESS_PROMPT"="E-mail адреса";
+/* Text displayed when no results are found in the search */
+"EMPTY_RESULTSET" = "Для запиту \"{query_string}\" відсутні результати. Спробуйте використовувати інший пошуковий термін або виберіть категорію для дискусій для перегляду.";
+/* Prompt shown to users on the course list encouraging them to find new courses */
+"ENROLLMENT_LIST.FIND_COURSES_PROMPT" = "Шукаєте новий виклик?";
+/* Button title opening course catalog */
+"ENROLLMENT_LIST.FIND_COURSES" = "Знайти курс, доступний для мобільного пристрою";
+/* Button title showing screen providing information about why a course may not be visible */
+"ENROLLMENT_LIST.LOOKING_FOR_COURSE" = "Не можете знайти один з Ваших курсів?";
+/* Error message when user is not enrolled to any course and course discovery is also disabled.*/
+"ENROLLMENT_LIST.NO_ENROLLMENT" = "Наче Ви не підписані ще на жоден курс";
+/* Prompt indicating user needs to enter an email address */
+"ENTER_EMAIL"="Будь ласка, введіть Ваше ім'я користувача або e-mail та спробуйте знову.";
+/* Prompt indicating user needs to enter a password */
+"ENTER_PASSWORD"="Будь ласка, введіть пароль та спробуйте знову.";
+/* Text used when the post is visible to everyone */
+"EVERYONE"="всі";
+/* Message when user attempts to register an account using an external service like Facebook or Google, but they already have an account linked to that service */
+"EXTERNAL_REGISTRATION_BECAME_LOGIN" = "Ви вже встановили аккаунт {platform_name} з Вашого аккаунту {service}. Ви вже увійшли в систему з цим аккаунтом.";
+/* Endorsed text */
+"ENDORSED" = "Схвалено";
+/* Facebook login method */
+"FACEBOOK"="Facebook";
+/* Overlay message shown when facebook login fails because the user's account isn't linked */
+"FAILED_TO_LOAD_TOPICS"="Помилка при завантаженні тем";
+/* Title of find courses screen */
+"FIND_COURSES"="Знайти курси";
+/* Overlay message shown when enrolling in a course fails because the user is already in the course */
+"FIND_COURSES_ALREADY_ENROLLED_MESSAGE"="Ви вже підписані на цей курс";
+/* Overlay message shown when enrolling in a course fails */
+"FIND_COURSES_ENROLLMENT_ERROR_DESCRIPTION"="При підписанні до курсу виникла помилка";
+/* Title of overlay message shown when enrolling in a course fails */
+"FIND_COURSES_ENROLLMENT_ERROR_TITLE"="Помилка при підписці";
+/* Title of overlay message shown when enrolling in a course succeeds */
+"FIND_COURSES_ENROLLMENT_SUCCESSFUL_MESSAGE"="Ви підписані на цей курс";
+/* Title of overlay message shown when enrolling in a course succeeds */
+"FIND_COURSES_OFFLINE_MESSAGE"="Ви в Автономному режимі.\nЩоб шукати курси, з'єднайтеся з Internet.";
+/* Title of overlay message shown when sign in fails */
+"FLOATING_ERROR_LOGIN_TITLE"="Помилка входу";
+/* Title of overlay message shown when reset password fails */
+"FLOATING_ERROR_TITLE"="Помилка відновлення паролю";
+/* Adds a `:` after a label, used in form. Eg. "{First Name}: Bob" */
+"FORM_LABEL"="{label}:";
+/* Google login method */
+"GOOGLE"="Google";
+/* Overlay message shown when third party login fails because the user's account isn't linked. {service} is a third party login service like "Facebook". {platform_name} is the name of the service like "edX". {destination_name} is the name of service's web destination like "edx.org" */
+"SERVICE_ACCOUNT_NOT_ASSOCIATED_MESSAGE"="Переконайтесь, що Ваш аккаунт {service} пов'язаний з Вашим акканунтом {platform_name} на {destination_name}";
+/* Title of overlay message shown when login through an external service fails because the user's account isn't linked. For example, "Google account not associated with edX account" */
+"SERVICE_ACCOUNT_NOT_ASSOCIATED_TITLE"="Аккаунт {service} не пов'язаний з аккаунтом {platform_name} ";
+/* Indicator for course content that is marked as having a graded component */
+"GRADED" = "Оцінено";
+/* Warning shown to indicate that the user is in a section of graded content. */
+"GRADED_CONTENT_WARNING" = "We recommend that you complete graded sections like this one in your web browser until they are fully supported on mobile.";
+/* Message shown when there are no handouts for a course */
+"HANDOUTS_UNAVAILABLE"="Наразі немає матеріалу для цього курсу.";
+/* Overlay error shown when logging in with an invalid email address */
+"INVALID_EMAIL_MESSAGE"="Будь ласка, перевірте коректність вводу Вашого e-mail та спробуйте знову.";
+/* Overlay error shown when logging in with an invalid username or password */
+"INVALID_USERNAME_PASSWORD"="Будь ласка, впевніться, що Ваші ім'я користувача або e-mail та пароль вірні та спробуйте знову.";
+/* Alert dialog text asking whether it's okay to download large videos */
+"LARGE_DOWNLOAD_MESSAGE"="Розмір відео, яке Ви вибрали, більше ніж 1 GB.\nВи все одно бажаєте завантажити відео?";
+/* Alert dialog title when asking whether it's okay to download large videos */
+"LARGE_DOWNLOAD_TITLE"="Велике завантаження";
+/* Title for Course Item that was last accessed */
+"LAST_ACCESSED" = "Остання активність";
+/* Prompt leading user to create account screen */
+"LOGIN_SPLASH_SIGN_UP"="Зареєструйтесь та почніть навчанні";
+/* Prompt leading user to sign in screen */
+"LOGIN_SPLASH_SIGN_IN"="Вже є аккаунт? Увійдіть";
+/* Button title to log out the current user */
+"LOGOUT"="Вийти";
+/* Option to sort discussion post list by most activity */
+"MOST_ACTIVITY"="Найбільша активність";
+/* Option to sort discussion post list by most votes */
+"MOST_VOTES"="Найбільше голосів";
+/* Screen title showing a user's courses */
+"MY_COURSES"="Мої курси";
+/* Screen title showing a user's settings */
+"MY_SETTINGS"="Мої налаштування";
+/* Screen title showing a user's downloaded videos */
+"MY_VIDEOS" = "Мої відео";
+/* Marked as answer for endorsed responses */
+"MARKED_ANSWER" = "Відмітити відповідь";
+/* Overlay error shown when attempting an action without an internet connection */
+"NETWORK_NOT_AVAILABLE_MESSAGE"="Ви не з'єднані з Інтернет.";
+/* Alert dialog error shown when attempting an action without an internet connection */
+"NETWORK_NOT_AVAILABLE_MESSAGE_TROUBLE"="Ви не з'єднання з Інтернет. Будь ласка, перевірте з'єднання з Інтернет.";
+/* Title of alert dialog shown when attempting an action without an internet connection */
+"NETWORK_NOT_AVAILABLE_TITLE"="Помилка з'єднання";
+/* Button title for moving to the next block in the course */
+"NEXT" = "Наступний";
+/* Button title for moving to the next unit in the course */
+"NEXT_UNIT" = "Наступний розділ";
+/* Message shown when tapping on enroll courses when in app course enrollment is disabled */
+"NO_ENROLLMENT_INTERSTITIAL_BOTTOM_LABEL" = "У той же час, Ви можете записатися на курси через наш сайт - Вам необхідно увійти в систему, зареєструватися, а потім повернутися в додаток, коли ви закінчите.";
+/* Message shown when tapping on enroll courses when in app course enrollment is disabled */
+"NO_ENROLLMENT_INTERSTITIAL_TOP_LABEL" = "Наша команда працює над тим, щоб надати Вам можливість підписатися на курси за допомогою цього додатку.";
+/* Message shown when no results are found while filtering discussions */
+"NO_RESULTS_FOUND" = "Немає публікацій в цій категорії обговорень";
+/* Message shown to indicate video transcript support has not yet been implemented */
+"NO_TRANSCRIPT" = "Стенограма для цього відео ще не доступна";
+/* Message shown when user attempts to download a video over cellular data, but has chosen to only allow video downloads over wifi */
+"NO_WIFI_MESSAGE" = "Ваші налаштування завантажень дозволяють завантажувати через Wi-Fi..\nБудь ласка, під'єднайтесь до мережі Wi-Fi або змініть Ваші налаштування завантажень.";
+/* Message shown on videos screen when user has not downloaded any videos */
+"NO_VIDEOS_DOWNLOADED" = "Ви не завантажили жодного відео.";
+/* Text shown when examining part of a course in video only mode, but that part of the course has no videos. {mode_switcher} will be replaced with a name or icon for the mode switch button */
+"NO_VIDEOS_TRY_MODE_SWITCHER" = "В цьому розділі немає відео. Для перегляду контенту розділу, оберіть вище {mode_switcher} та переключіться на режим повного курсу.";
+/* Text displayed when no results are found for following*/
+"NO_FOLLOWING_RESULTS" = "Ви не відслідковуєте жодні публікації";
+/* Message shown when no results are found for all posts*/
+"NO_COURSE_RESULTS" = "В цьому обговоренні курсу відсутні публікації";
+/* Indicates a field that does not apply to the current context */
+"NOT_APPLICABLE" = "Не доступно";
+/* Label of switch that toggles push notification support */
+"NOTIFICATIONS_ENABLED" = "Доступні сповіщення";
+/*Text for author if post is by anonymous user*/
+"ANONYMOUS" = "Анонімно";
+/* Label indicating user has on internet connection and is in offline mode */
+"OFFLINE" = "Offline";
+/* Alert dialog okay button */
+"OK"="Ок";
+/* Button title allowing user to open current page in their web browser */
+"OPEN_IN_BROWSER"="Показати у Safari";
+/* Button title allowing user to open current page in their web browser */
+"OPEN_IN_BROWSER_TITLE"="Показує тільки відео";
+/* Button label to bring up course finder */
+"OR_SIGN_IN_WITH"="Або увійдіть за домпомогою";
+/* Login screen password field placeholder text */
+"PASSWORD_PLACEHOLDER" = "Пароль";
+/* Alert dialog button shown when finishing a video to ask if user should continue by watching the next video */
+"PLAYBACK_COMPLETE_CONTINUE"="Продовжити";
+/* Alert dialog button shown when finishing a video to ask if user should continue by watching the next video (negative option) */
+"PLAYBACK_COMPLETE_CONTINUE_CANCEL"="Ні";
+/* Alert dialog content when finishing a video to ask if user should continue by watching the next video */
+"PLAYBACK_COMPLETE_MESSAGE"="Бажаєте подивитись наступне відео?";
+/* Alert dialog title when finishing a video to ask if user should continue by watching the next video */
+"PLAYBACK_COMPLETE_TITLE"="Ви додивились це відео до кінця.";
+/* Post screen title in creating a new post */
+"POST" = "Створити новий допис";
+/* Title for Row on Discussion screen which opens the posts followed by the user */
+"POSTS_IM_FOLLOWING" = "Публікації, за якими я слідкую";
+/* Navigation item title for post and responses */
+"DISCUSSION_POST" = "Обговорення публікації";
+/* Post discussion button title in Create a new post */
+"POST_DISCUSSION"="Створити нову публікацію";
+/* Post question button title in Create a new post */
+"POST_QUESTION"="Поставити питання";
+/* Button title for moving to the previous block in the course */
+"PREVIOUS" = "Назад";
+/* Button title for moving to the next unit in the course */
+"PREVIOUS_UNIT" = "Попередній розділ";
+/* A10y hint for the change picture button. */
+"PROFILE.CHANGE_PICTURE_ACCESSIBILITY_HINT" = "Завантажити нове фото профілю.";
+/* Change picture button text on edit profile screen. */
+"PROFILE.CHANGE_PICTURE_BUTTON" = "Змінити";
+/* Text for use a photo already in library for user profile photo alert */
+"PROFILE.CHOOSE_EXISTING" = "Обрати фото";
+/* Instruction title text on the photo crop view. */
+"PROFILE.CROP_AND_RESIZE_PICTURE" = "Обрізати та змінити розмір";
+/* 'Current Language' label on top row of edit language in user's profile */
+"PROFILE.CURRENT_LANGUAGE_LABEL" = "Поточна мова:";
+/* 'Current Location' label on top row of edit country in user's profile */
+"PROFILE.CURRENT_LOCATION_LABEL" = "Поточне місцезнаходження:";
+/* Profile edit view title */
+"PROFILE.EDIT_TITLE" = "Редагувати профіль";
+/* Accessibility label for edit profile button */
+"PROFILE.EDIT_ACCESSIBILITY" = "Редагувати профіль";
+/* Accessibility hint for country field in user profile */
+"PROFILE.COUNTRY_ACCESSIBILITY_HINT" = "Ваша країна";
+/* Accessibility hint for language field in user profile */
+"PROFILE.LANGUAGE_ACCESSIBILITY_HINT" = "Мова, яку Ви обираєте";
+/* Shown when viewing someone else's limied profile. */
+"PROFILE.LEARNER_HAS_LIMITED_PROFILE" = "Цей  {platform_name} слухач має профіль з обмеженим доступом до інформації";
+/* User has not filled in an "about me" on their profile */
+"PROFILE.NO_BIO" = "Відсутня інформація \"Про мене\"";
+/* Option to allow for nil setting of a particular field */
+"PROFILE.NO_FIELD" = "Ні {platform_name}";
+/* Text in the picture taker alert to delete the existing image */
+"PROFILE.REMOVE_IMAGE" = "Видалити";
+/* Profile screen text indicating that the user is currently only displaying a limited profile */
+"PROFILE.SHOWING_LIMITED" = "Доступ до інформації Вашого профілю зараз обмежено";
+/* Text for take picture for user profile photo alert */
+"PROFILE.TAKE_PICTURE" = "Зробити знімок";
+/* Descriptive text for why a limited profile is shown for users under 13, first line */
+"PROFILE.AGE_LIMIT" = "Вам має бути більше 13 років, щоб отримати профіль із повноцінним доступом до інформації";
+/* Error retrieving a profile */
+"PROFILE.UNABLE_TO_GET" = "Ми не можемо завантажити цей профіль";
+/* Error message when removing profile picture */
+"PROFILE.UNABLE_TO_REMOVE_PHOTO" = "Ми не змогли видалити Вашу фотографію";
+/* Error saving user profile, for field `field_name` */
+"PROFILE.UNABLE_TO_SEND" = "Ми не змогли оновити Ваш {field_name}.";
+/* Error message when setting a new profile picture */
+"PROFILE.UNABLE_TO_SET_PHOTO" = "Ми не змогли оновити Ваше фото.";
+/*Pipe sign using for formatting in discussion posts*/
+"PIPE_SIGN" = "|";
+/* Question used in the segmented control Creating a new post */
+"QUESTION"="Запитання";
+/* Option to sort discussion post list by recent activity */
+"RECENT_ACTIVITY" = "Нещодавні дії";
+/* Section title to display recently downloaded videos */
+"RECENT_VIDEOS"="Нещодавні відео";
+/* Create account agreement. Followed by agreement name like "End User License Agreement */
+"REDIRECT_TEXT" = "Увійшовши до цієї програми, Ви погоджуєтесь з";
+/* Label before Sort and Filter buttons on Posts Screen ( The Colon(:) is part of the string) */
+"REFINE" = "Уточнити:";
+/* Button title when responses are closed for a thread */
+"RESPONSES_CLOSED"="Responses are closed for this post";
+/* Title of registration agreement */
+"REGISTRATION_AGREEMENT_BUTTON_TITLE"="{platform_name} Умови надання послуг та Кодекс честі";
+/* Create account agreement. Followed by list of agreement names like "End User License Agreement" */
+"REGISTRATION_AGREEMENT_MESSAGE"="Створюючи аккаунт, Ви погоджуєтесь з";
+/* Button text allowing user create an account */
+"REGISTRATION_CREATE_MY_ACCOUNT"="Створити мій аккаунт";
+/* Text shown while waiting for registration request */
+"REGISTRATION_CREATING_ACCOUNT"="Створення аккаунту...";
+/* Error prompt shown during registration to indicate an empty field. {field_name} is the name of a registration field like 'password' */
+"REGISTRATION_FIELD_EMPTY_ERROR"="Будь ласка, Ведіть Ваше {field_name}.";
+/* Error prompt shown during registration to indicate a field missing a selection. {field_name} is the name of a registration field like 'year of birth' */
+"REGISTRATION_FIELD_EMPTY_SELECT_ERROR"="Будь ласка, оберіть Ваше {field_name}.";
+/* Error prompt shown during registration when a field entry is too long. {field_name} is the name of a registration field like 'password'. {count} is a number of characters */
+/* Error prompt shown during registration when a field entry is too long. {field_name} is the name of a registration field like 'password'. {count} is a number of characters */
+"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{one}"="{field_name} cannot have more than {count} character.";
+"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{few}"="{field_name} cannot have more than {count} characters.";
+"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{other}"="{field_name} cannot have more than {count} characters.";
+/* Error prompt shown during registration when a field entry is too short.  {field_name} is the name of a registration field like 'password'. {count} is a number of characters */
+/* Error prompt shown during registration when a field entry is too short.  {field_name} is the name of a registration field like 'password'. {count} is a number of characters */
+"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{one}"="{field_name} must have at least {count} character.";
+"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{few}"="{field_name} must have at least {count} characters.";
+"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{other}"="{field_name} must have at least {count} characters.";
+/* Button text allowing user to hide visible optional registration fields */
+"REGISTRATION_HIDE_OPTIONAL_FIELDS"="Сховати необов'язкові поля";
+/* Button text allowing user to show hidden optional registration fields */
+"REGISTRATION_SHOW_OPTIONAL_FIELDS"="Показати необов'язкові поля";
+/* Heading on registration screen allowing users to sign up using external services like Facebook and Google. Will be followed by text "or sign up with an email". */
+"REGISTRATION_SIGN_UP_PROMPT"="Увійти за допомогою";
+/* Heading on registration screen allowing users to sign up using external services like Facebook and Google. Will be preceded by text "Sign up with" */
+"REGISTRATION_SIGN_UP_ALTERNATE_PROMPT"="Або за допомогою email";
+/* Alert dialog title prompting user to enter an email address to reset their password */
+"RESET_PASSWORD_TITLE"="Відновити пароль";
+/* Alert dialog content prompting user to enter an email address to reset their password */
+"RESET_PASSWORD_POPUP_TEXT"="Введіть e-mail-адресу Вашого аккаунту і ми відправимо Вам інструкцію по відновленню Вашого паролю.";
+/* Alert dialog title confirming to the user that a reset password was sent to them */
+"RESET_PASSWORD_CONFIRMATION_TITLE"="E-mail для відновлення паролю відправлено";
+/* Alert dialog content confirming to the user that a reset password was sent to them */
+"RESET_PASSWORD_CONFIRMATION_MESSAGE"="Ми відправили вам e-mail з інструкцією про відновлення паролю.\nЯкщо Ви не побачите його через декілька хвилин, перевірте Спам-директорію вашої скриньки.";
+/* Button that allows user to retry an operation that did not succeed */
+"RETRY" = "Спробувати ще";
+/*Offline snackbar button that allows user to reload data*/
+"RELOAD" = "Перезавантажити";
+/* Response back title in adding a new response */
+"ADD_A_RESPONSE"="Додати відгук";
+/* Discussion response - {count} is a number of responses */
+/* Discussion response - {count} is a number of responses */
+"RESPONSE##{one}"="{count} відповідь";
+"RESPONSE##{few}"="{count} відповідей";
+"RESPONSE##{other}"="{count} відповідей";
+/* Discussion topics search placeholder */
+"SEARCH_ALL_POSTS"="Шукати усі повідомлення";
+/* Discussion search results  */
+"SEARCH_RESULTS"="Результат пошуку";
+/* Text shown below the video, in portrait mode */
+"ROTATE_DEVICE"="Поверніть свій пристрій для перегляду на весь екран";
+/*if filter applied then append this string to error message*/
+"REMOVE_FILTER" = "Спробуйте очистити Ваш фільтр публікацій.";
+/* Label shown when user attempts to view a course section that hasn't been synced  */
+"SECTION_UNAVAILABLE_OFFLINE"="Цей розділ не доступний у Автономному режимі.\nЯкщо Ви завантажили матеріал з іншої секції, перейдіть до тієї секція для його перегляду.";
+/* Screen title showing a user's settings */
+"SETTINGS"="Налаштування";
+/* Text for a Twitter or Facebook post to a course about page */
+"SHARE_A_COURSE"="І обрав курс на {platform_name}! Перевірте:";
+/* Sign in screen title and button initiating login process after user enters credentials like username and password */
+"SIGN_IN_TEXT"="Увійти";
+/* Message shown while user waits for response to a sign in request */
+"SIGN_IN_BUTTON_TEXT_ON_SIGN_IN"="Вхід виконано";
+/*Sign up screen title and button initiating sign up process on the main screen */
+"REGISTER_TEXT"="Реєструватися";
+/* Indicates a date in the near future */
+"SOON"="Скоро";
+/* Label for posts pinned by Staff */
+"STAFF"="ПРАЦІВНИКИ";
+/* Label for date when course starts */
+"STARTING"="Початок - {start_date}";
+/* Discover Courses button text on the first screen */
+"STARTUP.DISCOVERCOURSES"="Знайти курси";
+/* Explore Subjects button text on the first screen */
+"STARTUP.EXPLORE_SUBJECTS"="Знайти теми";
+/* Button allowing user to submit feedback about the app via email */
+"SUBMIT_FEEDBACK.OPTION_TITLE" = "Залишити відгук";
+/* Support message email title */
+"SUBMIT_FEEDBACK.MESSAGE_SUBJECT" = "Відгуки слухачів";
+/* Marker in feedback email meant to separate feedback from prepopulated device information */
+"SUBMIT_FEEDBACK.MARKER" = "---- Залишити відгук вище цієї лінії ----";
+/* Line in submit feedback email that supplies OS version information. For example, "iOS Version: 9.2" */
+"SUBMIT_FEEDBACK.OS_VERSION" = "iOS Version: {version}";
+/* Line in submit feedback email that supplies app version information. For example, "App Version: 2.2 (2.2.23)" */
+"SUBMIT_FEEDBACK.APP_VERSION" = "Версія додатку: {version} ({build})";
+/* Line in submit feedback email that supplies device model information. For example, "Device Model: iPhone" */
+"SUBMIT_FEEDBACK.DEVICE_MODEL" = "Модель пристрою: {model}";
+/* Text that indicates the visibility of the post */
+"POST_VISIBILITY"="Це повідомлення можуть бачити тільки {cohort}.";
+/* Text that indicates the visibility of the post to everyone */
+"POST_VISIBILITY_EVERYONE" = "Це повідомлення можуть бачити всі.";
+/*Add parenthesis around text*/
+"PARENTHESIS" = "({text})";
+/* Alert dialog title shown when network request takes too long to complete */
+"TIMEOUT_ALERT_TITLE"="Час сплив";
+/* Alert dialog content shown when network request takes too long to complete */
+"TIMEOUT_CHECK_INTERNET_CONNECTION"="Будь ласка, перевірте Ваше Інтернет-з'єднання.\nСторінка завантажується довше, ніж очікувалося.";
+/* Title as place holder in Create a new post */
+"TITLE"="Заголовок";
+/* Topic as button title in Create a new post */
+"TOPIC"="Тема: {topic}";
+/* Back bar button topics */
+"TOPICS"="Теми";
+/* Button text allowing user to reset their password */
+"TROUBLE_IN_LOGIN_BUTTON"="Забули пароль?";
+/* Error shown when video download fails */
+"UNABLE_TO_DOWNLOAD"="Неможливо завантажити." ;
+/* Error shown when the course content could not for an unknown reason. */
+"UNABLE_TO_LOAD_COURSE_CONTENT"="Неможливо завантажити вміст курсу.\nСпробуйте пізніше.";
+/* Filtering option to show unanswered discussion posts */
+"UNANSWERED"="Без відповіді";
+/* Navigation title for a Question Post which has no endorsed answers */
+"UNANSWERED_QUESTION" = "Запитання без відповіді";
+/* Filtering option to show unread discussion posts*/
+"UNREAD"="Непрочитано";
+/* Placeholder title for course content with no title */
+"UNTITLED"="Без назви";
+/* Hint text for login field */
+"USERNAME_PLACEHOLDER" = "Ім'я користувача або e-mail адреса";
+/*Error message when operation failed with unknow error*/
+"UNKNOWN_ERROR" = "Вашу дію не може бути завершено";
+/* Text shown to display the current version number. Environment is a server name like "prod", "dev", stage" and may be empty. For example "Version 1.2.3 Prod" */
+"VERSION_DISPLAY" = "Версія {number} {environment}";
+/* Error shown when video download fails */
+"VIDEO_CONTENT_NOT_AVAILABLE"="Це відео наразі недоступне. Перевірте пізніше.";
+/* Floating overlay text shown after deleting a video. {count} is a number of videos */
+/* Floating overlay text shown after deleting a video. {count} is a number of videos */
+"VIDEOS_DELETED##{one}" = "{count} video deleted";
+"VIDEOS_DELETED##{few}" = "{count} videos deleted";
+"VIDEOS_DELETED##{other}" = "{count} videos deleted";
+/* Floating overlay text shown after video download begins. {count} is a number of videos  */
+/* Floating overlay text shown after video download begins. {count} is a number of videos  */
+"VIDEOS_DOWNLOADING##{one}" = "Downloading {count} video";
+"VIDEOS_DOWNLOADING##{few}" = "Downloading {count} videos";
+"VIDEOS_DOWNLOADING##{other}" = "Downloading {count} videos";
+/* Message shown to indicate a number of already downloaded videos. {count} is a number of videos  */
+/* Message shown to indicate a number of already downloaded videos. {count} is a number of videos  */
+"VIDEOS_DOWNLOADED##{one}" = "Downloaded {count} video";
+"VIDEOS_DOWNLOADED##{few}" = "Downloaded {count} videos";
+"VIDEOS_DOWNLOADED##{other}" = "Downloaded {count} videos";
+/* Floating overlay text shown while videos download */
+"VIDEO_DOWNLOADS_IN_PROGRESS" = "Відео завантажується";
+/* Message shown instead of a video when attempting to watch a video that is only availabe on the web */
+"VIDEO_ONLY_ON_WEB" = "Це відео на даний момент доступне тільки в браузері. Натисніть, щоб переглянути його в вашому веб-браузері.";
+/* Alert dialog content shown when user attempts to view a video that hasn't been synced  */
+"VIDEO_NOT_AVAILABLE"="Це відео недоступне у Автономному режимі.\nБудь ласка, оберіть відео, яке Ви завантажили на свій пристрій.";
+/* Shows in the video setting sub-table which item is selected */
+"VIDEO_SETTING_SELECTED" = "✓ %@";
+/* Button action to open app on YouTube */
+"VIDEO.VIEW_ON_YOUTUBE" = "Переглянути відео на YouTube";
+/* Message shown for videos that can only be played external the app via YouTube. */
+"VIDEO.ONLY_ON_YOUTUBE" = "Це відео може бути переглянуте лише на YouTube";
+/* Button text for showing an associated item */
+"VIEW" = "Показати";
+/* Button linking to course announcements */
+"VIEW_HANDOUTS" = "Показати матеріали курсу";
+/* Discussion vote - {count} is a number of votes */
+/* Discussion vote - {count} is a number of votes */
+"VOTE##{one}"="{count} Vote";
+"VOTE##{few}"="{count} Votes";
+"VOTE##{other}"="{count} Votes";
+/*Title of update button on fullscreen error and SnackBar*/
+"VERSION_UPGRADE.UPDATE" = "Оновлення";
+/*Title of dismiss button on SnackBar*/
+"VERSION_UPGRADE.DISMISS" = "Відхилити";
+/*Deprecated version detail message*/
+"VERSION_UPGRADE.DEPRECATED_MESSAGE" = "Доступна нова версія додатка ";
+/*Outdated version detail message*/
+"VERSION_UPGRADE.OUT_DATED_MESSAGE" = "Ваша версія додатку більше не підтримується";
+/*New version available without deadline message*/
+"VERSION_UPGRADE.NEW_VERSION_AVAILABLE" = "Доступна нова версія додатка ";
+/* Overlay shown after a network request has started, telling the user to wait for the response */
+"WAITING_FOR_RESPONSE"="Будь ласка, зачекайте...";
+/* Alert dialog button title to confirm an action */
+"YES"="Так";
