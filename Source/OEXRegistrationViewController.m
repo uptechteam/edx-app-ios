@@ -305,7 +305,7 @@ NSString* const OEXExternalRegistrationWithExistingAccountNotification = @"OEXEx
     
     if (isOptionalFieldPresent) {
         //Add the optional field toggle
-        CGFloat buttonWidth = 150;
+        CGFloat buttonWidth = self.view.bounds.size.width - 100;
         CGFloat buttonHeight = 30;
         [self.scrollView addSubview:self.optionalFieldsSeparator];
         [self.toggleOptionalFieldsButton setFrame:CGRectMake(self.view.frame.size.width / 2 - buttonWidth / 2, offset, buttonWidth, buttonHeight)];
