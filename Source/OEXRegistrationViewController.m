@@ -293,6 +293,7 @@ NSString* const OEXExternalRegistrationWithExistingAccountNotification = @"OEXEx
         UIView* view = fieldController.view;
         // Add view to scroll view if field is not optional and it is not agreement field.
         if([fieldController field].isRequired && view.superview != nil) {
+            [view setFrame:CGRectMake(0, offset, width, 10)]; //set width so that the view can calculate label size correctly
             [view layoutIfNeeded];
             [view setFrame:CGRectMake(0, offset, width, view.frame.size.height)];
             offset = offset + view.frame.size.height;
