@@ -176,6 +176,12 @@
     if(segmentIO.apiKey && segmentIO.isEnabled) {
         [SEGAnalytics setupWithConfiguration:[SEGAnalyticsConfiguration configurationWithWriteKey:segmentIO.apiKey]];
     }
+    
+    //Initialize Firebase
+    if (config.isFirebaseEnabled) {
+        [FIRApp configure];
+        [[FIRAnalyticsConfiguration sharedInstance] setAnalyticsCollectionEnabled:YES];
+    }
 
     //NewRelic Initialization with edx key
     OEXNewRelicConfig* newrelic = [config newRelicConfig];
@@ -187,7 +193,7 @@
     //Initialize Fabric
     OEXFabricConfig* fabric = [config fabricConfig];
     if(fabric.appKey && fabric.isEnabled) {
-        [Fabric with:@[CrashlyticsKit]];
+        [Fabric with:@[[Crashlytics class]]];
     }
     
 }
