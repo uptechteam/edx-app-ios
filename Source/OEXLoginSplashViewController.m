@@ -38,6 +38,7 @@
     
     [self.signInButton setTitle:[Strings loginSplashSignIn] forState:UIControlStateNormal];
     [self.signUpButton applyButtonStyle:[self.environment.styles filledPrimaryButtonStyle] withTitle:[Strings loginSplashSignUp]];
+    [self.signUpButton.titleLabel setAdjustsFontSizeToFitWidth:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

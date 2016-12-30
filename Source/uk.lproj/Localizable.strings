@@ -23,7 +23,7 @@
 /* Accessibility label for posted data of discussion responses*/
 "ACCESSIBILITY.DISCUSSION_POSTED_ON" = "Опубліковано {date}";
 /* Accessibility hint for Vote button for discussion responses*/
-"ACCESSIBILITY.DISCUSSION_VOTE_HINT" = "Натисніть двічі для того, щоб віддати голос";
+"ACCESSIBILITY.DISCUSSION_VOTE_HINT" = "Натисніть двічі, щоб віддати голос";
 /* Accessibility hint for Unvote button for discussion responses*/
 "ACCESSIBILITY.DISCUSSION_UNVOTE_HINT" = "Натисніть двічі, щоб повернути голос";
 /* Accessibility hint for Report button for discussion responses*/
@@ -110,7 +110,7 @@
 /*Accessibility text for discussion thread last seen date(Posts screen) - {date} last updated thread date*/
 "ACCESSIBILITY.DISCUSSION_LAST_POST_ON" = "Остання публікація {date}";
 /*Accessibility hint for discussion thread(Posts screen)*/
-"ACCESSIBILITY.DISCUSSION_THREAD_HINT" = "Натисніть двічі для того, щоб побачити нитку";
+"ACCESSIBILITY.DISCUSSION_THREAD_HINT" = "Натисніть двічі, щоб побачити нитку";
 /*Accessibility hint for sort button(Posts Screen)*/
 "ACCESSIBILITY.DISCUSSION_SORT_BY" = "Сортувати по {sort_by}";
 /*Accessibility hint for filter button(Posts Screen)*/
@@ -373,7 +373,7 @@
 /* Title for Course Item that was last accessed */
 "LAST_ACCESSED" = "Остання активність";
 /* Prompt leading user to create account screen */
-"LOGIN_SPLASH_SIGN_UP"="Зареєструйтесь та почніть навчанні";
+"LOGIN_SPLASH_SIGN_UP"="Зареєструйтесь та почніть навчання";
 /* Prompt leading user to sign in screen */
 "LOGIN_SPLASH_SIGN_IN"="Вже є аккаунт? Увійдіть";
 /* Button title to log out the current user */
@@ -509,7 +509,7 @@
 /* Section title to display recently downloaded videos */
 "RECENT_VIDEOS"="Нещодавні відео";
 /* Create account agreement. Followed by agreement name like "End User License Agreement */
-"REDIRECT_TEXT" = "Увійшовши до цієї програми, Ви погоджуєтесь з";
+"REDIRECT_TEXT" = "Увійшовши до цієї програми, Ви погоджуєтесь із";
 /* Label before Sort and Filter buttons on Posts Screen ( The Colon(:) is part of the string) */
 "REFINE" = "Уточнити:";
 /* Button title when responses are closed for a thread */
@@ -517,7 +517,7 @@
 /* Title of registration agreement */
 "REGISTRATION_AGREEMENT_BUTTON_TITLE"="{platform_name} Умови надання послуг та Кодекс честі";
 /* Create account agreement. Followed by list of agreement names like "End User License Agreement" */
-"REGISTRATION_AGREEMENT_MESSAGE"="Створюючи аккаунт, Ви погоджуєтесь з";
+"REGISTRATION_AGREEMENT_MESSAGE"="Створюючи аккаунт, Ви погоджуєтесь із";
 /* Button text allowing user create an account */
 "REGISTRATION_CREATE_MY_ACCOUNT"="Створити мій аккаунт";
 /* Text shown while waiting for registration request */
