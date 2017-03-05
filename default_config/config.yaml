@@ -1,4 +1,4 @@
-API_HOST_URL: 'http://prometheus-test-server.cloudapp.net'
+API_HOST_URL: 'http://prometheus.org.ua'
 ENVIRONMENT_DISPLAY_NAME: 'Prometheus'
 PLATFORM_NAME: 'Prometheus'
 FEEDBACK_EMAIL_ADDRESS: 'support@prometheus.org.ua'
