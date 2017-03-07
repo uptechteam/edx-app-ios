@@ -10,8 +10,6 @@ import Foundation
 import MediaPlayer
 import UIKit
 
-private let StandardVideoAspectRatio : CGFloat = 0.6
-
 class VideoBlockViewController : UIViewController, CourseBlockViewController, OEXVideoPlayerInterfaceDelegate, StatusBarOverriding, InterfaceOrientationOverriding, VideoTranscriptDelegate {
     
     typealias Environment = protocol<DataManagerProvider, OEXInterfaceProvider, ReachabilityProvider, OEXConfigProvider, OEXRouterProvider>
@@ -102,14 +100,13 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, OE
         view.backgroundColor = OEXStyles.sharedStyles().standardBackgroundColor()
         view.setNeedsUpdateConstraints()
         
-        videoController.hidesNextPrev = true
     }
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         self.loadVideoIfNecessary()
     }
-
+    
     override func viewDidAppear(animated : Bool) {
         
         // There's a weird OS bug where the bottom layout guide doesn't get set properly until
@@ -122,14 +119,18 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, OE
         
         validateSubtitleTimer()
         
-        guard canDownloadVideo() else {
+        if !canDownloadVideo() {
             guard let video = self.environment.interface?.stateForVideoWithID(self.blockID, courseID : self.courseID) where video.downloadState == .Complete else {
                 self.showOverlayMessage(Strings.noWifiMessage)
                 return
             }
-            
-            return
         }
+        
+        guard let videoPlayer = videoController.moviePlayerController else { return }
+        if currentOrientation() == .LandscapeLeft || currentOrientation() == .LandscapeRight {
+            videoPlayer.setFullscreen(true, withOrientation: self.currentOrientation())
+        }
+        
     }
     
     override func viewDidDisappear(animated: Bool) {
@@ -167,7 +168,7 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, OE
             make.edges.equalTo(view)
         }
         
-        videoController.height = view.bounds.size.width * StandardVideoAspectRatio
+        videoController.height = view.bounds.size.width * CGFloat(STANDARD_VIDEO_ASPECT_RATIO)
         videoController.width = view.bounds.size.width
         
         videoController.view.snp_remakeConstraints {make in
@@ -180,7 +181,7 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, OE
                 make.top.equalTo(self.snp_topLayoutGuideBottom)
             }
             
-            make.height.equalTo(view.bounds.size.width * StandardVideoAspectRatio)
+            make.height.equalTo(view.bounds.size.width * CGFloat(STANDARD_VIDEO_ASPECT_RATIO))
         }
         
         rotateDeviceMessageView?.snp_remakeConstraints {make in
@@ -247,7 +248,7 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, OE
     private func showError(error : NSError?) {
         loadController.state = LoadState.failed(error, icon: .UnknownError, message: Strings.videoContentNotAvailable)
     }
-
+    
     private func showYoutubeMessage(url: NSURL) {
         let buttonInfo = MessageButtonInfo(title: Strings.Video.viewOnYoutube) {
             if UIApplication.sharedApplication().canOpenURL(url){
@@ -259,14 +260,14 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, OE
     
     private func showLoadedBlock(block : CourseBlock, forVideo video: OEXHelperVideoDownload) {
         navigationItem.title = block.displayName
-
+        
         dispatch_async(dispatch_get_main_queue()) {
             self.loadController.state = .Loaded
         }
-
+        
         videoController.playVideoFor(video)
     }
-
+    
     private func canDownloadVideo() -> Bool {
         let hasWifi = environment.reachability.isReachableViaWiFi() ?? false
         let onlyOnWifi = environment.dataManager.interface?.shouldDownloadOnlyOnWifi ?? false
@@ -294,6 +295,9 @@ class VideoBlockViewController : UIViewController, CourseBlockViewController, OE
             else {
                 videoPlayer.setFullscreen(true, withOrientation: self.currentOrientation())
             }
+        }
+        else if videoController.shouldRotate && newCollection.verticalSizeClass == .Compact {
+            videoPlayer.setFullscreen(true, withOrientation: self.currentOrientation())
         }
     }
     
