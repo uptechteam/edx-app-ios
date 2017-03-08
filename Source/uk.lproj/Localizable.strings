@@ -1,7 +1,7 @@
 /*
  Localizable.strings
  edXVideoLocker
- 
+
  Created by Nirbhay Agarwal on 07/07/14.
  Copyright (c) 2014-2015 edX. All rights reserved.
  */
@@ -115,6 +115,10 @@
 "ACCESSIBILITY.DISCUSSION_SORT_BY" = "Сортувати по {sort_by}";
 /*Accessibility hint for filter button(Posts Screen)*/
 "ACCESSIBILITY.DISCUSSION_FILTER_BY" = "Фільтрувати за {filter_by}";
+/*Accessibility label for user profile in left drawer*/
+"ACCESSIBILITY.LEFT_DRAWER.PROFILE_LABEL" = "Вхід виконано як {user_name}, {user_email}";
+/*Accessibility hint for user profile in left drawer*/
+"ACCESSIBILITY.LEFT_DRAWER.PROFILE_HINT" = "Натисніть двічі, щоб відкрити свій профіль";
 /* Title of user profile section for user accomplishments (like badges) */
 "ACCOMPLISHMENTS.TITLE" = "Досягнення";
 /* Default text template when user shares an accomplishment */
@@ -143,6 +147,24 @@
 "ANSWER"="Відповідь";
 /* Navigation title for a Question Post which has endorsed answers */
 "ANSWERED_QUESTION"="Запитання, на які була дана відповідь";
+/* Alert title for positive app review */
+"APP_REVIEW.RATE_THE_APP" = "Оцінити додаток";
+/* Positive review message */
+"APP_REVIEW.POSITIVE_REVIEW_MESSAGE" = "Розкажіть іншим, що ви думаєте про  додаток написавши відгук у магазині додатків.";
+/* Send feedback message for negative app review */
+"APP_REVIEW.SEND_FEEDBACK" = "Відправити відгук?";
+/* Help us improve message for negative app review */
+"APP_REVIEW.HELP_US_IMPROVE" = "Допоможіть нам покращітись!";
+/* Maybe later message for positive/negative app review */
+"APP_REVIEW.MAYBE_LATER" = "Можливо пізніше";
+/* Send feedback message for negative app review */
+"APP_REVIEW.SEND_FEEDBACK" = "Відправити відгук?";
+/* Question for rating view */
+"APP_REVIEW.RATE_THE_APP_QUESTION" = "Як ви оціните додаток?";
+/* Submit button for rating view */
+"APP_REVIEW.SUBMIT" = "Відправити";
+/* App Review message email title */
+"APP_REVIEW.MESSAGE_SUBJECT" = "Відгук користувача";
 /*Asteric for marking fields required*/
 "ASTERIC" = "*";
 /* Prefix used with Staff of Community TA on the posts screen */
@@ -214,10 +236,6 @@
 "COURSE_DETAIL.ENROLL_NOW" = "Записатися зараз";
 /* Button title allowing user to view a course from the course's catalog detail page */
 "COURSE_DETAIL.VIEW_COURSE" = "Дивитися курс";
-/* Back bar button title of course */
-"COURSE"="Курс";
-/* Title of tab showing course content */
-"COURSEWARE_TAB_TITLE"="Програма навчання";
 /* Message shown when there is no course content */
 "COURSEWARE_UNAVAILABLE"="Наразі програма навчання не доступна.";
 /* Message shown when attempting to display content not available on the app */
@@ -227,7 +245,7 @@
 /* Text describing the Announcements section within the course dashboard */
 "COURSE_DASHBOARD_ANNOUNCEMENTS_DETAIL"="Дізнатися про останні новини";
 /* Title text for the Courseware section of the course dashboard */
-"COURSE_DASHBOARD_COURSEWARE"="Програма навчання";
+"COURSE_DASHBOARD_COURSEWARE"="Курс";
 /* Text describing the Courseware section within the course dashboard */
 "COURSE_DASHBOARD_COURSE_DETAIL"="Доступ до відео та завдань";
 /* Title text for the Discussions section of the course dashboard */
@@ -247,7 +265,7 @@
 /* Option to show only video course content. Constrasts with 'Show All Course Content'. */
 "COURSE_MODE_VIDEO"="Показати тільки відео";
 /* Label to describe the button that allows choosing between Video only mode and All Course Content mode */
-"COURSE_MODE_PICKER_DESCRIPTION" = "Mode Picker";
+"COURSE_MODE_PICKER_DESCRIPTION" = "Вибір режиму";
 /* Text displayed when Can't find one of your courses is tapped on My Courses screen */
 "COURSE_NOT_LISTED" = "Ми докладаємо всіх зусиль, щоб зробити всі наші курси доступними для мобільних пристроїв. Якщо ви не можете знайти курс, перевірте трохи згодом. Ми докладаємо зусиль щодня!";
 /* Message shown on a course when it hasn't started yet.*/
@@ -359,7 +377,7 @@
 /* Indicator for course content that is marked as having a graded component */
 "GRADED" = "Оцінено";
 /* Warning shown to indicate that the user is in a section of graded content. */
-"GRADED_CONTENT_WARNING" = "We recommend that you complete graded sections like this one in your web browser until they are fully supported on mobile.";
+"GRADED_CONTENT_WARNING" = "Ми рекомендуємо завершувати розділи з оцінками (як цей) у вашому браузері, поки вони повністю не підтримують мобільні девайси.";
 /* Message shown when there are no handouts for a course */
 "HANDOUTS_UNAVAILABLE"="Наразі немає матеріалу для цього курсу.";
 /* Overlay error shown when logging in with an invalid email address */
@@ -513,7 +531,7 @@
 /* Label before Sort and Filter buttons on Posts Screen ( The Colon(:) is part of the string) */
 "REFINE" = "Уточнити:";
 /* Button title when responses are closed for a thread */
-"RESPONSES_CLOSED"="Responses are closed for this post";
+"RESPONSES_CLOSED"="Відповіді до цієї публікації закрито";
 /* Title of registration agreement */
 "REGISTRATION_AGREEMENT_BUTTON_TITLE"="{platform_name} Умови надання послуг та Кодекс честі";
 /* Create account agreement. Followed by list of agreement names like "End User License Agreement" */
@@ -528,14 +546,14 @@
 "REGISTRATION_FIELD_EMPTY_SELECT_ERROR"="Будь ласка, оберіть Ваше {field_name}.";
 /* Error prompt shown during registration when a field entry is too long. {field_name} is the name of a registration field like 'password'. {count} is a number of characters */
 /* Error prompt shown during registration when a field entry is too long. {field_name} is the name of a registration field like 'password'. {count} is a number of characters */
-"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{one}"="{field_name} cannot have more than {count} character.";
-"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{few}"="{field_name} cannot have more than {count} characters.";
-"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{other}"="{field_name} cannot have more than {count} characters.";
+"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{one}"="{field_name} не може мати більше, ніж {count} символ.";
+"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{few}"="{field_name} не може мати більше, ніж {count} символів.";
+"REGISTRATION_FIELD_MAX_LENGTH_ERROR##{other}"="{field_name} не може мати більше, ніж {count} символів.";
 /* Error prompt shown during registration when a field entry is too short.  {field_name} is the name of a registration field like 'password'. {count} is a number of characters */
 /* Error prompt shown during registration when a field entry is too short.  {field_name} is the name of a registration field like 'password'. {count} is a number of characters */
-"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{one}"="{field_name} must have at least {count} character.";
-"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{few}"="{field_name} must have at least {count} characters.";
-"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{other}"="{field_name} must have at least {count} characters.";
+"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{one}"="{field_name} повинне містити принаймні {count} символ.";
+"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{few}"="{field_name} повинне містити принаймні {count} символів.";
+"REGISTRATION_FIELD_MIN_LENGTH_ERROR##{other}"="{field_name} повинне містити принаймні {count} символів.";
 /* Button text allowing user to hide visible optional registration fields */
 "REGISTRATION_HIDE_OPTIONAL_FIELDS"="Сховати необов'язкові поля";
 /* Button text allowing user to show hidden optional registration fields */
@@ -645,19 +663,19 @@
 "VIDEO_CONTENT_NOT_AVAILABLE"="Це відео наразі недоступне. Перевірте пізніше.";
 /* Floating overlay text shown after deleting a video. {count} is a number of videos */
 /* Floating overlay text shown after deleting a video. {count} is a number of videos */
-"VIDEOS_DELETED##{one}" = "{count} video deleted";
-"VIDEOS_DELETED##{few}" = "{count} videos deleted";
-"VIDEOS_DELETED##{other}" = "{count} videos deleted";
+"VIDEOS_DELETED##{one}" = "{count} відеозапис видалено";
+"VIDEOS_DELETED##{few}" = "{count} відеозаписів видалено";
+"VIDEOS_DELETED##{other}" = "{count} відеозаписів видалено";
 /* Floating overlay text shown after video download begins. {count} is a number of videos  */
 /* Floating overlay text shown after video download begins. {count} is a number of videos  */
-"VIDEOS_DOWNLOADING##{one}" = "Downloading {count} video";
-"VIDEOS_DOWNLOADING##{few}" = "Downloading {count} videos";
-"VIDEOS_DOWNLOADING##{other}" = "Downloading {count} videos";
+"VIDEOS_DOWNLOADING##{one}" = "Завантажується {count} відео";
+"VIDEOS_DOWNLOADING##{few}" = "Завантажується {count} відео";
+"VIDEOS_DOWNLOADING##{other}" = "Завантажується {count} відео";
 /* Message shown to indicate a number of already downloaded videos. {count} is a number of videos  */
 /* Message shown to indicate a number of already downloaded videos. {count} is a number of videos  */
-"VIDEOS_DOWNLOADED##{one}" = "Downloaded {count} video";
-"VIDEOS_DOWNLOADED##{few}" = "Downloaded {count} videos";
-"VIDEOS_DOWNLOADED##{other}" = "Downloaded {count} videos";
+"VIDEOS_DOWNLOADED##{one}" = "Завантажено {count} відео";
+"VIDEOS_DOWNLOADED##{few}" = "Завантажено {count} відео";
+"VIDEOS_DOWNLOADED##{other}" = "Завантажено {count} відео";
 /* Floating overlay text shown while videos download */
 "VIDEO_DOWNLOADS_IN_PROGRESS" = "Відео завантажується";
 /* Message shown instead of a video when attempting to watch a video that is only availabe on the web */
@@ -676,9 +694,9 @@
 "VIEW_HANDOUTS" = "Показати матеріали курсу";
 /* Discussion vote - {count} is a number of votes */
 /* Discussion vote - {count} is a number of votes */
-"VOTE##{one}"="{count} Vote";
-"VOTE##{few}"="{count} Votes";
-"VOTE##{other}"="{count} Votes";
+"VOTE##{one}"="{count} голос";
+"VOTE##{few}"="{count} голосів";
+"VOTE##{other}"="{count} голосів";
 /*Title of update button on fullscreen error and SnackBar*/
 "VERSION_UPGRADE.UPDATE" = "Оновлення";
 /*Title of dismiss button on SnackBar*/
@@ -687,6 +705,8 @@
 "VERSION_UPGRADE.DEPRECATED_MESSAGE" = "Доступна нова версія додатка ";
 /*Outdated version detail message*/
 "VERSION_UPGRADE.OUT_DATED_MESSAGE" = "Ваша версія додатку більше не підтримується";
+/*Outdated version alert message for login screen*/
+"VERSION_UPGRADE.OUT_DATED_LOGIN_MESSAGE" = "Ваша версія додатка більше не підтримується. Оновіться до останньої версії для входу у додаток.";
 /*New version available without deadline message*/
 "VERSION_UPGRADE.NEW_VERSION_AVAILABLE" = "Доступна нова версія додатка ";
 /* Overlay shown after a network request has started, telling the user to wait for the response */
