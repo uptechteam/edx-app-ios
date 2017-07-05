@@ -32,7 +32,7 @@ class CourseUnknownBlockViewController: UIViewController, CourseBlockViewControl
             success:
             { [weak self] block in
                 self?.block = block
-                if let video = block.type.asVideo where video.isYoutubeVideo{
+                if let video = block.type.asVideo where video.isYoutubeVideo {
                     self?.showYoutubeMessage(Strings.Video.viewOnYoutube, message: Strings.Video.onlyOnYoutube, icon: Icon.CourseModeVideo, videoUrl: video.videoURL)
                 }
                 else {

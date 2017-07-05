@@ -35,9 +35,9 @@ private class FontLoader {
     
     var error: Unmanaged<CFError>?
     if !CTFontManagerRegisterGraphicsFont(font, &error) {
-      let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
-      let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
-      NSException(name: NSInternalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
+        let errorDescription: CFStringRef = CFErrorCopyDescription(error!.takeUnretainedValue())
+        let nsError = error!.takeUnretainedValue() as AnyObject as! NSError
+        NSException(name: NSInternalInconsistencyException, reason: errorDescription as String, userInfo: [NSUnderlyingErrorKey: nsError]).raise()
     }
   }
 }
