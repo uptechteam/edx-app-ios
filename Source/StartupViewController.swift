@@ -12,6 +12,7 @@ class StartupViewController: UIViewController, InterfaceOrientationOverriding {
 
     typealias Environment = protocol<OEXRouterProvider, OEXConfigProvider, OEXAnalyticsProvider>
 
+    private let launchImageName = "launchBackground"
     private let logoImageView = UIImageView()
 
     private let environment: Environment
@@ -51,13 +52,12 @@ class StartupViewController: UIViewController, InterfaceOrientationOverriding {
     // MARK: - View Setup
 
     private func setupBackground() {
-        let backgroundView = UIView()
-        backgroundView.backgroundColor = UIColor(hexString: "19222D", alpha: 1)
-        view.addSubview(backgroundView)
-
-        backgroundView.snp_makeConstraints { (make) in
-            make.edges.equalTo(view)
-        }
+        let backgroundImage = UIImage(named: launchImageName)
+        let imageView = UIImageView(frame: view.frame)
+        imageView.image = backgroundImage
+        imageView.contentMode = .ScaleAspectFill
+        
+        view.addSubview(imageView)
     }
 
     private func setupLogo() {

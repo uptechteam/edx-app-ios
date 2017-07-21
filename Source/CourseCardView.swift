@@ -29,7 +29,7 @@ class CourseCardView: UIView, UIGestureRecognizerDelegate {
         return OEXTextStyle(weight : .Normal, size: .Large, color: OEXStyles.sharedStyles().neutralBlack())
     }
     private var detailTextStyle : OEXTextStyle {
-        return OEXTextStyle(weight : .Normal, size: .XXXSmall, color: OEXStyles.sharedStyles().neutralXDark())
+        return OEXTextStyle(weight : .Normal, size: .XXSmall, color: OEXStyles.sharedStyles().neutralXDark())
     }
     
     private func setup() {

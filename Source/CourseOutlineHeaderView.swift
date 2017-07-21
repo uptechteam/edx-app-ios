@@ -27,11 +27,11 @@ public class CourseOutlineHeaderView: UIView {
     }
     
     private var labelStyle : OEXTextStyle {
-        return OEXTextStyle(weight: .SemiBold, size: .XSmall, color: contrastColor)
+        return OEXTextStyle(weight: .SemiBold, size: .Base, color: contrastColor)
     }
     
     private var subtitleLabelStyle : OEXTextStyle {
-        return OEXTextStyle(weight: .Normal, size: .Small, color : OEXStyles.sharedStyles().neutralBlack())
+        return OEXTextStyle(weight: .Normal, size: .Large, color : OEXStyles.sharedStyles().neutralBlack())
     }
     
     private var viewButtonStyle : ButtonStyle {
