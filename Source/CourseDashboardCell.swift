@@ -28,10 +28,10 @@ class CourseDashboardCell: UITableViewCell {
     private let bottomLine = UIView()
     
     private var titleTextStyle : OEXTextStyle {
-        return OEXTextStyle(weight : .Normal, size: .Large, color : OEXStyles.sharedStyles().neutralXDark())
+        return OEXTextStyle(weight : .Normal, size: .XXXLarge, color : OEXStyles.sharedStyles().neutralXDark())
     }
     private var detailTextStyle : OEXTextStyle {
-        return OEXTextStyle(weight : .Normal, size: .Base, color : OEXStyles.sharedStyles().neutralBase())
+        return OEXTextStyle(weight : .Normal, size: .XXLarge, color : OEXStyles.sharedStyles().neutralBase())
     }
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
