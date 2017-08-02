@@ -26,9 +26,9 @@ private let SmallIconSize : CGFloat = 15
 private let IconFontSize : CGFloat = 15
 
 public class CourseOutlineItemView: UIView {
-    static let detailFontStyle = OEXTextStyle(weight: .Normal, size: .XXLarge, color : OEXStyles.sharedStyles().neutralBase())
+    static let detailFontStyle = OEXTextStyle(weight: .Normal, size: .Large, color : OEXStyles.sharedStyles().neutralBase())
     
-    private let fontStyle = OEXTextStyle(weight: .Normal, size: .XXXLarge, color : OEXStyles.sharedStyles().neutralBlack())
+    private let fontStyle = OEXTextStyle(weight: .Normal, size: .XLarge, color : OEXStyles.sharedStyles().neutralBlack())
     private let titleLabel = UILabel()
     private let subtitleLabel = UILabel()
     private let leadingImageButton = UIButton(type: UIButtonType.System)

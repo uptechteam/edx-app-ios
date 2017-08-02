@@ -35,6 +35,8 @@
 #import "OEXRouter.h"
 #import "OEXSession.h"
 #import "OEXSegmentConfig.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface OEXAppDelegate () <UIApplicationDelegate>
 
@@ -67,6 +69,8 @@
     }
 #endif
 
+    [Fabric with:@[[Crashlytics class]]];
+        
     // logout user automatically if server changed
     [[[ServerChangedChecker alloc] init] logoutIfServerChanged];
 

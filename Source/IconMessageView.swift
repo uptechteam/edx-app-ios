@@ -27,7 +27,7 @@ class IconMessageView : UIView {
     private var hasBottomButton = false
     
     private var buttonFontStyle : OEXTextStyle {
-        return OEXTextStyle(weight :.Normal, size : .Base, color : OEXStyles.sharedStyles().neutralDark())
+        return OEXTextStyle(weight :.Normal, size : .Large, color : OEXStyles.sharedStyles().neutralDark())
     }
     
     private let iconView : UIImageView
@@ -104,7 +104,7 @@ class IconMessageView : UIView {
     }
     
     var messageStyle : OEXTextStyle  {
-        let style = OEXMutableTextStyle(weight: .SemiBold, size: .Base, color : OEXStyles.sharedStyles().neutralDark())
+        let style = OEXMutableTextStyle(weight: .SemiBold, size: .Large, color : OEXStyles.sharedStyles().neutralDark())
         style.alignment = .Center
         
         return style
