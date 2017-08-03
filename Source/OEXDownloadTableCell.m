@@ -26,4 +26,13 @@
     _btn_cancel.tintColor = [[OEXStyles sharedStyles] neutralBase];
 }
 
+- (void) prepareForReuse {
+    self.lbl_title.text = @"";
+    self.lbl_time.text = @"";
+    self.lbl_totalSize.text = @"";
+    
+    [self.progressView setProgress:0.0];
+    
+}
+
 @end

@@ -19,6 +19,10 @@ extern double const OEXMaxDownloadProgress;
 @property (nonatomic, strong, nullable) OEXVideoSummary* summary;
 
 @property (nonatomic, assign) double downloadProgress;
+
+@property (nonatomic, assign) int64_t size;
+@property (nonatomic, assign) int64_t bytesDownloaded;
+
 @property (nonatomic, strong) NSString* filePath;
 
 @property (nonatomic, assign) BOOL isVideoDownloading;  // used to get if the video downloading is in progress

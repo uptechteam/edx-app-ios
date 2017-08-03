@@ -197,14 +197,30 @@
 - (void)downloadProgressNotification:(NSNotification*)notification {
     NSDictionary* progress = (NSDictionary*)notification.userInfo;
     NSURLSessionTask* task = [progress objectForKey:DOWNLOAD_PROGRESS_NOTIFICATION_TASK];
+    
+    NSNumber *videoSize = [progress objectForKey:DOWNLOAD_PROGRESS_NOTIFICATION_TOTAL_BYTES_TO_WRITE];
+    NSNumber *bytesDowloaded = [progress objectForKey:DOWNLOAD_PROGRESS_NOTIFICATION_TOTAL_BYTES_WRITTEN];
+    
     NSString* url = [task.originalRequest.URL absoluteString];
+    
     for(OEXHelperVideoDownload* video in _arr_downloadingVideo) {
-        if([video.summary.videoURL isEqualToString:url]) {
+        if([[[self formattedURLFromString:video.summary.videoURL] absoluteString] isEqualToString:url]) {
+            video.size = [videoSize integerValue];
+            video.bytesDownloaded = [bytesDowloaded integerValue];
 //            //NSLog(@"progress for video  %@   id  %@ download  %f", video.name , video.str_VideoTitle , video.DownloadProgress);
             [self updateProgressForVisibleRows];
             break;
         }
     }
+}
+
+- (NSURL*) formattedURLFromString:(NSString*) urlString {
+    NSString *encodedString = [urlString
+                               stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    
+    return [NSURL URLWithString: [encodedString
+                                  stringByTrimmingCharactersInSet:[NSCharacterSet
+                                                                   whitespaceAndNewlineCharacterSet]]];
 }
 
 - (void)downloadCompleteNotification:(NSNotification*)notification {
@@ -234,8 +250,12 @@
         for(OEXDownloadTableCell* cell in array) {
             NSIndexPath* indexPath = [self.table_Downloads indexPathForCell:cell];
             OEXHelperVideoDownload* video = [self.arr_downloadingVideo objectAtIndex:indexPath.row];
-            float progress = video.downloadProgress;
+            float progress = (video.bytesDownloaded * OEXMaxDownloadProgress)/video.size;
             cell.progressView.progress = progress / OEXMaxDownloadProgress;
+            
+            float result = (((double)video.size / 1024) / 1024);
+            cell.lbl_totalSize.text = [NSString stringWithFormat:@"%.2fMB", result];
+            
             if(progress == OEXMaxDownloadProgress) {
                 needReload = YES;
             }
