@@ -666,7 +666,10 @@ static OEXInterface* _sharedInterface = nil;
 #pragma mark Video management
 - (void)markDownloadProgress:(float)progress forURL:(NSString*)URLString andVideoId:(NSString*)videoId {
     for(OEXHelperVideoDownload* video in [self allVideos]) {
-        if(([video.summary.videoURL isEqualToString:URLString] && video.downloadState == OEXDownloadStatePartial)
+        NSString *formatterVideoURL = [self formattedURLStringFromString:video.summary.videoURL];
+        
+        if(([formatterVideoURL isEqualToString:URLString] && video.downloadState == OEXDownloadStatePartial)
+           
            || [video.summary.videoID isEqualToString:videoId]) {
             video.downloadProgress = progress;
             video.isVideoDownloading = YES;
@@ -1010,7 +1013,12 @@ static OEXInterface* _sharedInterface = nil;
     for(OEXVideoSummary* objVideo in [self.videoSummaries objectForKey : URL]) {
         OEXHelperVideoDownload* obj_helperVideo = [[OEXHelperVideoDownload alloc] init];
         obj_helperVideo.summary = objVideo;
-        obj_helperVideo.filePath = [OEXFileUtility filePathForRequestKey:obj_helperVideo.summary.videoURL];
+        
+        NSString *formattedURL = [self formattedURLStringFromString:obj_helperVideo.summary.videoURL];
+        
+        obj_helperVideo.filePath = [OEXFileUtility filePathForRequestKey:formattedURL];//obj_helperVideo.summary.videoURL];
+        
+        //obj_helperVideo.filePath = [OEXFileUtility filePathForRequestKey:obj_helperVideo.summary.videoURL];
 
         [arr_Videos addObject:obj_helperVideo];
     }
@@ -1483,6 +1491,15 @@ static OEXInterface* _sharedInterface = nil;
 
 - (nullable NSString*) getSavedAppVersion {
     return [[NSUserDefaults standardUserDefaults] objectForKey:OEXSavedAppVersionKey];
+}
+
+- (NSString*) formattedURLStringFromString:(NSString*) urlString {
+    NSString *encodedString = [urlString
+                               stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    
+    return [encodedString
+            stringByTrimmingCharactersInSet:[NSCharacterSet
+                                             whitespaceAndNewlineCharacterSet]];
 }
 
 @end

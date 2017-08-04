@@ -84,7 +84,8 @@ static NSURLSession* videosBackgroundSession = nil;
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         NSArray* array = [self.storage getVideosForDownloadState:OEXDownloadStatePartial];
         for(VideoData* data in array) {
-            NSString* file = [OEXFileUtility filePathForVideoURL:data.video_url username:[OEXSession sharedSession].currentUser.username];
+            NSString *formattedURL = [self formattedURLStringFromString: data.video_url];
+            NSString* file = [OEXFileUtility filePathForVideoURL:formattedURL username:[OEXSession sharedSession].currentUser.username];
             if([[NSFileManager defaultManager] fileExistsAtPath:file]) {
                 data.download_state = [NSNumber numberWithInt:OEXDownloadStateComplete];
                 continue;
@@ -186,7 +187,7 @@ static NSURLSession* videosBackgroundSession = nil;
 - (NSURLSessionDownloadTask*)startBackgroundDownloadForVideo:(VideoData*)video {
     //Request
     
-    NSURL *url = [self formattedURLFromString:video.video_url];
+    NSURL *url = [NSURL URLWithString: [self formattedURLStringFromString:video.video_url]];
     
     NSURLRequest* request = [NSURLRequest requestWithURL:url];
     //Task
@@ -456,13 +457,13 @@ static NSURLSession* videosBackgroundSession = nil;
     return strTaskID;
 }
 
-- (NSURL*) formattedURLFromString:(NSString*) urlString {
+- (NSString*) formattedURLStringFromString:(NSString*) urlString {
     NSString *encodedString = [urlString
                                stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
     
-    return [NSURL URLWithString: [encodedString
-                                        stringByTrimmingCharactersInSet:[NSCharacterSet
-                                                                         whitespaceAndNewlineCharacterSet]]];
+    return [encodedString
+            stringByTrimmingCharactersInSet:[NSCharacterSet
+                                             whitespaceAndNewlineCharacterSet]];
 }
 
 @end
